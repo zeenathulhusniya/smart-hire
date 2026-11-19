@@ -1,0 +1,6 @@
+{
+  "name": "Smart Hire",
+  "description": "Find Remote Jobs. Build Your Future. Sri Lanka Work-From-Home Job Portal and Career Management Platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

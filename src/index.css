@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --color-midnight: #211638;
+    --color-deep-purple: #49316F;
+    --color-secondary-purple: #7046A5;
+    --color-accent-lavender: #A78BFA;
+    --color-light-lavender: #E9DDFB;
+    --color-bg-main: #FAF8FF;
+    --color-bg-card: #FFFFFF;
+    --color-text-primary: #281C3B;
+    --color-text-secondary: #756B83;
+    --color-border: #E7E0EF;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, #FAF8FF 0%, #F0E9FC 55%, #E9DDFB 100%);
+    background-attachment: fixed;
+    color: #281C3B;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.bg-hero-gradient {
+  background: linear-gradient(120deg, #211638 0%, #49316F 55%, #7046A5 100%);
+}
+
+.bg-dashboard-gradient {
+  background: linear-gradient(135deg, #FAF8FF 0%, #F0E9FC 55%, #E9DDFB 100%);
+}
+
+.bg-featured-gradient {
+  background: linear-gradient(120deg, #7046A5 0%, #9271C9 50%, #B9A2EE 100%);
+}
+
+.bg-sidebar-gradient {
+  background: linear-gradient(180deg, #211638 0%, #342158 55%, #49316F 100%);
+}
+
+.btn-purple-gradient {
+  background: linear-gradient(120deg, #5B358D 0%, #7046A5 55%, #8D68CF 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px -2px rgba(112, 70, 165, 0.35);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.btn-purple-gradient:hover:not(:disabled) {
+  background: linear-gradient(120deg, #49316F 0%, #5E3890 55%, #7B56BF 100%);
+  box-shadow: 0 8px 20px -4px rgba(112, 70, 165, 0.45);
+}
+
+.card-elevated {
+  background-color: #FFFFFF;
+  border-color: #E7E0EF;
+  box-shadow: 0 6px 24px -6px rgba(33, 22, 56, 0.08), 0 1px 3px rgba(112, 70, 165, 0.05);
+}
+
+.card-elevated-hover {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-elevated-hover:hover {
+  border-color: #A78BFA;
+  box-shadow: 0 12px 28px -6px rgba(112, 70, 165, 0.14), 0 2px 6px rgba(33, 22, 56, 0.06);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
